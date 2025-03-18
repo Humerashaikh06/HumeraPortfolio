@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # humeras-portfolio
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -27,3 +28,6 @@ npm run dev
 ```sh
 npm run build
 ```
+=======
+# HumeraPortfolio
+>>>>>>> 2f3d7fcbd5350ba6b787c7dc1f01d6f2fe40b671

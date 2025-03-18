@@ -2,10 +2,10 @@
   <div class="flex items-center justify-center max-w-full min-h-screen px-4 -mt-20 sm:px-6 md:px-8">
     
     <!-- Canvas (Background) -->
-    <!-- <div
+    <div
       class="absolute inset-0 hidden overflow-x-hidden md:block"
       ref="canvasWrapper"
-    ></div> -->
+    ></div>
     
     <!-- Main Flex Container -->
     <div class="z-10 flex flex-col items-center justify-center w-full pointer-events-none md:flex-row">
