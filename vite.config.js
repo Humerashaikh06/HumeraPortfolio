@@ -12,6 +12,7 @@ export default defineConfig({
     vueJsx(),
     // vueDevTools(),
   ],
+  base: '/HumeraPortfolio/', // Change to match your repository name
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

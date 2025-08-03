@@ -32,11 +32,11 @@
       <!-- Right Section (Image) -->
       <div class="z-10 flex items-center justify-center w-full pointer-events-none sm:w-1/2 md:w-1/3">
         <!-- Outer frame with glowing effect -->
-        <div class="relative border-5 rounded-full w-[500px] h-[350px] sm:h-[400px] md:h-[500px] shadow-glow">
+        <div class="relative rounded-full w-[500px] h-[350px] sm:h-[400px] md:h-[500px] shadow-glow">
           <img
-            src="../assets/images/humera.png"
+            src="../assets/images/worker-Photoroom.png"
             alt="Humera Shaikh"
-            class="object-cover w-full h-full rounded-full drop-shadow-[0_0px_60px_rgba(23,136,174,0.8)]"
+            class="object-none object-bottom w-full h-full rounded-full drop-shadow-[0_0px_60px_rgba(23,136,174,0.8)]"
           />
         </div>
       </div>

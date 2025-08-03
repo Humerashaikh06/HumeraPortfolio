@@ -83,7 +83,7 @@
           class="flex px-3 py-2 text-sm md:text-lg text-white transition duration-300 border border-[#1788ae] hover:border-[#1280a4] rounded-md pointer-events-auto"
         >
           Download CV
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ml-2 size-6">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ml-2 size-5 md:size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
           </svg>
         </button>
@@ -101,16 +101,21 @@ export default {
   },
   methods: {
     downloadCV() {
-      // Path to the resume inside the 'public' folder
-      const resumeUrl = "/Humera_Shaikh.pdf"; 
+      const resumeUrl = "https://humerashaikh06.github.io/HumeraPortfolio/Humera_Shaikh.pdf";
 
-      // Create an anchor element dynamically
-      const link = document.createElement("a");
-      link.href = resumeUrl; 
-      link.download = "Humera_Shaikh.pdf"; // Set the downloaded file name
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link); //Removes the anchor element after clicking.
+      fetch(resumeUrl)
+        .then(response => response.blob()) // Convert to blob
+        .then(blob => {
+          const blobUrl = URL.createObjectURL(blob); // Create a local URL
+          const link = document.createElement("a");
+          link.href = blobUrl;
+          link.download = "Humera_Shaikh.pdf"; // Force download
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          URL.revokeObjectURL(blobUrl); // Clean up
+        })
+        .catch(error => console.error("Error downloading CV:", error));
     },
   },
   mounted() {

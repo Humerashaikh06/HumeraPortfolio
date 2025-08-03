@@ -7,7 +7,7 @@
     >
       <!-- Modal Box -->
       <div
-        class="relative flex flex-col w-full max-w-5xl max-h-[95vh] p-6 mx-4 text-white transition-transform duration-300 transform scale-95 bg-gray-900 shadow-2xl bg-opacity-90 md:mx-0 rounded-2xl md:flex-row"
+        class="relative flex flex-col w-full max-w-5xl max-h-[95vh] p-4 md:p-6 mx-4 text-white transition-transform duration-300 transform scale-95 bg-gray-900 shadow-2xl bg-opacity-90 md:mx-0 rounded-2xl md:flex-row"
       >
         <!-- Left Side - Image -->
         <div class="items-center justify-center hidden w-full p-2 md:flex md:w-1/2">
